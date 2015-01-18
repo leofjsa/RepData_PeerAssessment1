@@ -420,8 +420,10 @@ table(DayType)
 
 <h4>Data for the plots</h4>
 
-<p>&ldquo;panelPlot&rdquo; is a dataframe with 1 column for weekdays and 1 column for weekends
-&ldquo;dataPlot&rdquo; is a dataframe with 1 column for the daytype (weekend or weekday)</p>
+<ul>
+<li>&ldquo;panelPlot&rdquo; is a dataframe with 1 column for weekdays and 1 column for weekends<br/></li>
+<li>&ldquo;dataPlot&rdquo; is a dataframe with 1 column for the daytype (weekend or weekday)</li>
+</ul>
 
 <pre><code class="r">myNewData &lt;- cbind(myNewData, DayType)
 FiltroWDay &lt;- DayType == &quot;Weekday&quot;

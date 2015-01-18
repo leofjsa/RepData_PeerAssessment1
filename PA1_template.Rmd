@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # REPRODUCIBLE RESEARCH - ASSIGNMENT 1
 
 ## Initial settings:
@@ -86,26 +85,9 @@ MedianDailySteps1 <- formatC(quantile(x = DailySum1, probs = 0.5), format = "d")
 
 **Mean:** `r MeanDailySteps1`  
 **Median:** `r MedianDailySteps1`
-=======
----
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
----
-
-
-## Loading and preprocessing the data
-
-
-
-## What is mean total number of steps taken per day?
->>>>>>> 5faa26acd8823509f3b9550574b92f82a7834399
-
 
 
 ## What is the average daily activity pattern?
-<<<<<<< HEAD
 ### a) Calculation of mean number of steps per interval
 The vector "IntervalMean1" has 288 elements (1 for each 5 min during the day), with the average number of steps per interval (to calculate this average, only the "non NA" days were considered)
 
@@ -137,7 +119,6 @@ MaxSteps <- formatC(x = max(IntervalMean1), format = "d")
 ```
 
 **5-min interval with maximum number of steps:** interval `r MaxIntervalSteps`, with `r MaxSteps` steps
-
 
 
 ## Inputing missing values
@@ -226,8 +207,8 @@ table(DayType)
 ### Make a panel plot containing a time series plot...
 
 #### Data for the plots
-"panelPlot" is a dataframe with 1 column for weekdays and 1 column for weekends
-"dataPlot" is a dataframe with 1 column for the daytype (weekend or weekday)
+* "panelPlot" is a dataframe with 1 column for weekdays and 1 column for weekends  
+* "dataPlot" is a dataframe with 1 column for the daytype (weekend or weekday)
 
 ``` {r Weekday2, echo=TRUE}
 myNewData <- cbind(myNewData, DayType)
@@ -277,14 +258,3 @@ with(subset(dataPlot, daytype == "weekday"), points(interval, steps, type = "l",
 with(subset(dataPlot, daytype == "weekend"), points(interval, steps, type = "l", lwd = 2, col = "red"))
 legend("topright", pch = 15, col = c("blue", "red"), legend = c("weekday", "weekend"))
 ```
-
-=======
-
-
-
-## Imputing missing values
-
-
-
-## Are there differences in activity patterns between weekdays and weekends?
->>>>>>> 5faa26acd8823509f3b9550574b92f82a7834399

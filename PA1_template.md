@@ -105,7 +105,6 @@ MedianDailySteps1 <- formatC(quantile(x = DailySum1, probs = 0.5), format = "d")
 **Median:** 10395
 
 
-
 ## What is the average daily activity pattern?
 ### a) Calculation of mean number of steps per interval
 The vector "IntervalMean1" has 288 elements (1 for each 5 min during the day), with the average number of steps per interval (to calculate this average, only the "non NA" days were considered)
@@ -142,7 +141,6 @@ MaxSteps <- formatC(x = max(IntervalMean1), format = "d")
 ```
 
 **5-min interval with maximum number of steps:** interval 835, with 206 steps
-
 
 
 ## Inputing missing values
@@ -245,8 +243,8 @@ table(DayType)
 ### Make a panel plot containing a time series plot...
 
 #### Data for the plots
-"panelPlot" is a dataframe with 1 column for weekdays and 1 column for weekends
-"dataPlot" is a dataframe with 1 column for the daytype (weekend or weekday)
+* "panelPlot" is a dataframe with 1 column for weekdays and 1 column for weekends  
+* "dataPlot" is a dataframe with 1 column for the daytype (weekend or weekday)
 
 
 ```r
@@ -302,4 +300,3 @@ legend("topright", pch = 15, col = c("blue", "red"), legend = c("weekday", "week
 ```
 
 <img src="figure/UnifiedPlot-1.png" title="plot of chunk UnifiedPlot" alt="plot of chunk UnifiedPlot" style="display: block; margin: auto;" />
-

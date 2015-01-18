@@ -1,5 +1,4 @@
 #REPRODUCIBLE RESEARCH - ASSIGNMENT 1
-####################################
 
 ##Initials (private)
 setwd("C:/Users/LeonardoF/Dropbox/Desenvolvimento/Coursera - Data Science Specialization (Johns Hopkins)/Geral/R wd/Assignments/5- Reproducible Research")
