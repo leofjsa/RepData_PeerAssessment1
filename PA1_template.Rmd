@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # REPRODUCIBLE RESEARCH - ASSIGNMENT 1
 
 ## Initial settings:
@@ -85,10 +86,26 @@ MedianDailySteps1 <- formatC(quantile(x = DailySum1, probs = 0.5), format = "d")
 
 **Mean:** `r MeanDailySteps1`  
 **Median:** `r MedianDailySteps1`
+=======
+---
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+---
+
+
+## Loading and preprocessing the data
+
+
+
+## What is mean total number of steps taken per day?
+>>>>>>> 5faa26acd8823509f3b9550574b92f82a7834399
 
 
 
 ## What is the average daily activity pattern?
+<<<<<<< HEAD
 ### a) Calculation of mean number of steps per interval
 The vector "IntervalMean1" has 288 elements (1 for each 5 min during the day), with the average number of steps per interval (to calculate this average, only the "non NA" days were considered)
 
@@ -261,3 +278,13 @@ with(subset(dataPlot, daytype == "weekend"), points(interval, steps, type = "l",
 legend("topright", pch = 15, col = c("blue", "red"), legend = c("weekday", "weekend"))
 ```
 
+=======
+
+
+
+## Imputing missing values
+
+
+
+## Are there differences in activity patterns between weekdays and weekends?
+>>>>>>> 5faa26acd8823509f3b9550574b92f82a7834399
